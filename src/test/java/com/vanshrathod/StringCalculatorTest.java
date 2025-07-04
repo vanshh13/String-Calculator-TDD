@@ -14,7 +14,14 @@ public class StringCalculatorTest {
 
     @Test
     public void testSingleNumberReturnsSameNumber() {
-        assertEquals(1, stringCalculator.add("5"));
-        assertEquals(5, stringCalculator.add("7"));
+        assertEquals(5, stringCalculator.add("5"));
+        assertEquals(7, stringCalculator.add("7"));
     }
+
+    @Test
+    public void testTwoNumbersCommaSeparated() {
+        assertEquals(12, stringCalculator.add("7,5"));
+        assertEquals(13, stringCalculator.add("8,5"));
+    }
+
 }
