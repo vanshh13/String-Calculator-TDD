@@ -14,7 +14,7 @@ public class StringCalculatorTest {
 
     @Test
     public void testSingleNumberReturnsSameNumber() {
-        assertEquals(1, stringCalculator.add("5"));
-        assertEquals(5, stringCalculator.add("7"));
+        assertEquals(5, stringCalculator.add("5"));
+        assertEquals(7, stringCalculator.add("7"));
     }
 }
