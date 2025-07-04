@@ -12,4 +12,9 @@ public class StringCalculatorTest {
         assertEquals(0, stringCalculator.add(""));
     }
 
+    @Test
+    public void testSingleNumberReturnsSameNumber() {
+        assertEquals(1, stringCalculator.add("5"));
+        assertEquals(5, stringCalculator.add("7"));
+    }
 }

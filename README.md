@@ -18,6 +18,14 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 1 – One Number Returns That Number
+
+### ✔️ Features Implemented
+- Enhanced `add(String input)` to return the number itself if only one number is provided
+- Added test cases for various single-number inputs (e.g., `"5"`, `"7"`)
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -32,4 +40,5 @@ From terminal:
 | Version | Description                       |
 |---------|-----------------------------------|
 | 0       | Empty string returns 0            |
+| 1       | One number returns the number     |
 | ...     | (To be updated in future commits) |

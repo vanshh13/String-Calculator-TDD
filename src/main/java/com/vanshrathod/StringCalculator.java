@@ -2,6 +2,7 @@ package com.vanshrathod;
 
 public class StringCalculator {
     public int add(String input) {
-        return input.isEmpty() ? 0 : 0;
+        if(input.isEmpty()) return 0;
+        return Integer.parseInt(input);
     }
 }
