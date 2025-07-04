@@ -26,6 +26,15 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 2 – Two Numbers, Comma-Separated
+
+### ✔️ Features Implemented
+- Updated `add(String input)` to handle **two comma-separated numbers**
+- Returns their sum (e.g., `"7,5"` returns `12`)
+- Added multiple test cases for 2-number combinations
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -37,8 +46,9 @@ From terminal:
 
 ## 🔄 Progress Log
 
-| Version | Description                       |
-|---------|-----------------------------------|
-| 0       | Empty string returns 0            |
-| 1       | One number returns the number     |
-| ...     | (To be updated in future commits) |
+| Version | Description                             |
+|---------|-----------------------------------------| 
+| 0       | Empty string returns 0                  |
+| 1       | One number returns the number           |
+| 2       | Two comma-separated numbers supported   |
+| ...     | (To be updated in future commits)       |
