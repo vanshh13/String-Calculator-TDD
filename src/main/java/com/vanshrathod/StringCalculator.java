@@ -2,6 +2,8 @@ package com.vanshrathod;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.List;
+import java.util.ArrayList;
 
 public class StringCalculator {
     public int add(String input) {
@@ -30,10 +32,21 @@ public class StringCalculator {
 
         String numbers[] = input.split(delimiter);
         int sum = 0;
+        List<Integer> negative_numbers = new ArrayList<>();
+
         for (String num : numbers) {
             if (num.isEmpty()) continue;    // <- this will handle the edges case of testMixedNewlineCommaEdgeCase() 
-            sum += Integer.parseInt(num);
+            int value =  Integer.parseInt(num);
+            if(value < 0){
+                negative_numbers.add(value);
+            }
+            sum += value;
         }
+
+        if (!negative_numbers.isEmpty()) {
+            throw new IllegalArgumentException("Negative numbers not allowed: " + negative_numbers.toString());
+        }
+
         return sum;
     }
 }

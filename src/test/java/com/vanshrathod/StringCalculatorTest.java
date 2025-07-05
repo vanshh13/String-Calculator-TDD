@@ -55,4 +55,12 @@ public class StringCalculatorTest {
         assertEquals(6, stringCalculator.add("//[&&]\n1&&2&&3"));
     }
 
+    @Test
+    public void testNegativeNumbersThrowException() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            stringCalculator.add("1,-2,-3");
+        });
+        assertTrue(exception.getMessage().contains("-2"));
+        assertTrue(exception.getMessage().contains("-3"));
+    }
 }

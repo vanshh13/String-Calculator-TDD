@@ -74,6 +74,16 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 7 – Throw Exception for Negative Numbers
+
+### ✔️ Features Implemented
+- Throws an `IllegalArgumentException` if any negative number is found in the input
+- The exception message includes **all negative numbers** found (e.g., `"Negative numbers not allowed: -2, -5"`)
+- Parsing and error-checking logic updated to collect negatives before summing
+- Added unit tests to verify exception throwing and message content
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -94,4 +104,4 @@ From terminal:
 | 4       | Support newline (\n) as additional delimiter          |
 | 5       | Support custom delimiter using //;\n1;2               |
 | 6       | Support multi-character bracketed delimiters //[***]  |
-| ...     | (To be updated in future commits)                     |
+| 7       | Throw exception for negative numbers                  |
