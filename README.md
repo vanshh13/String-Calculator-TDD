@@ -35,6 +35,15 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 3 – Handle Any Amount of Numbers
+
+### ✔️ Features Implemented
+- Updated `add(String input)` to handle any number of comma-separated numbers
+- Correctly sums inputs like `"1,2,3,4"` and `"90,38,58,40"`
+- Improved test coverage to include multiple inputs of various lengths
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -46,9 +55,10 @@ From terminal:
 
 ## 🔄 Progress Log
 
-| Version | Description                             |
-|---------|-----------------------------------------| 
-| 0       | Empty string returns 0                  |
-| 1       | One number returns the number           |
-| 2       | Two comma-separated numbers supported   |
-| ...     | (To be updated in future commits)       |
+| Version | Description                                  |
+|---------|----------------------------------------------| 
+| 0       | Empty string returns 0                       |
+| 1       | One number returns the number                |
+| 2       | Two comma-separated numbers supported        |
+| 3       | Handle any amount of comma-separated numbers |
+| ...     | (To be updated in future commits)            |
