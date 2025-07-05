@@ -63,6 +63,8 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 6 – Support Multi-Character & Bracketed Delimiters (`//[***]\n1***2***3`)
+
 ### ✔️ Features Implemented
 - Extended custom delimiter support to allow **multi-character delimiters** enclosed in brackets
 - Handles inputs like `"//[***]\n1***2***3"` and sums correctly
