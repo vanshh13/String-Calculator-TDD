@@ -44,6 +44,15 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 4 – Support New Lines as Delimiters
+
+### ✔️ Features Implemented
+- Enhanced `add(String input)` to support newline (`\n`) as a valid delimiter alongside commas
+- Correctly parses inputs like `"1\n2,3"` and `"90\n32\n6"`
+- Added tests to verify mixed use of comma and newline delimiters
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -61,4 +70,5 @@ From terminal:
 | 1       | One number returns the number                |
 | 2       | Two comma-separated numbers supported        |
 | 3       | Handle any amount of comma-separated numbers |
+| 4       | Support newline (\n) as additional delimiter |
 | ...     | (To be updated in future commits)            |

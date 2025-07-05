@@ -30,4 +30,12 @@ public class StringCalculatorTest {
         assertEquals(10, stringCalculator.add("1,2,3,4"));
         assertEquals(226, stringCalculator.add("90,38,58,40"));
     }
+
+    @Test
+    public void testNewLineBetweenNumbers() {
+        assertEquals(6, stringCalculator.add("1\n2,3"));
+        assertEquals(128, stringCalculator.add("90\n32\n6"));
+        // assertEquals(128, stringCalculator.add("90\n,32\n6"));           <-- This case is not handled here. 
+    }
+
 }
