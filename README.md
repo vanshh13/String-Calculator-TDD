@@ -63,6 +63,15 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+### ✔️ Features Implemented
+- Extended custom delimiter support to allow **multi-character delimiters** enclosed in brackets
+- Handles inputs like `"//[***]\n1***2***3"` and sums correctly
+- Supports any length delimiter surrounded by brackets (e.g. `"[***]"`, `"[abc]"`)
+- Regex-escaped the delimiters to handle special characters safely
+- Added unit tests to verify the bracketed delimiter behavior
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -74,12 +83,13 @@ From terminal:
 
 ## 🔄 Progress Log
 
-| Version | Description                                  |
-|---------|----------------------------------------------| 
-| 0       | Empty string returns 0                       |
-| 1       | One number returns the number                |
-| 2       | Two comma-separated numbers supported        |
-| 3       | Handle any amount of comma-separated numbers |
-| 4       | Support newline (\n) as additional delimiter |
-| 5       | Support custom delimiter using //;\n1;2      |
-| ...     | (To be updated in future commits)            |
+| Version | Description                                           |
+|---------|-------------------------------------------------------| 
+| 0       | Empty string returns 0                                |
+| 1       | One number returns the number                         |
+| 2       | Two comma-separated numbers supported                 |
+| 3       | Handle any amount of comma-separated numbers          |
+| 4       | Support newline (\n) as additional delimiter          |
+| 5       | Support custom delimiter using //;\n1;2               |
+| 6       | Support multi-character bracketed delimiters //[***]  |
+| ...     | (To be updated in future commits)                     |

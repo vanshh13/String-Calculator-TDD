@@ -48,4 +48,11 @@ public class StringCalculatorTest {
         assertEquals(3, stringCalculator.add("//;\n1;2"));
         assertEquals(128, stringCalculator.add("//,\n90,32,6"));         
     }
+
+    @Test
+    public void testCustomMultiCharDelimiter() {
+        assertEquals(6, stringCalculator.add("//[***]\n1***2***3"));
+        assertEquals(6, stringCalculator.add("//[&&]\n1&&2&&3"));
+    }
+
 }
