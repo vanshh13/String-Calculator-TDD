@@ -53,6 +53,16 @@ Each feature is added incrementally through clean code, continuous testing, and 
 
 ---
 
+## ✅ Version 5 – Support Custom Delimiter (`//;\n1;2`)
+
+### ✔️ Features Implemented
+- Added support for a **single-character custom delimiter** defined at the start of the input
+- Input format: `"//[delimiter]\n[numbers]"`, e.g., `"//;\n1;2"` uses `;` as the delimiter
+- Fallback to default delimiters `,` and `\n` if no custom delimiter is provided
+- Includes unit tests to verify correct parsing and summing
+
+---
+
 ## 🔧 How to Run Tests
 
 Make sure you have JDK 17+ and Maven.  
@@ -71,4 +81,5 @@ From terminal:
 | 2       | Two comma-separated numbers supported        |
 | 3       | Handle any amount of comma-separated numbers |
 | 4       | Support newline (\n) as additional delimiter |
+| 5       | Support custom delimiter using //;\n1;2      |
 | ...     | (To be updated in future commits)            |

@@ -35,7 +35,17 @@ public class StringCalculatorTest {
     public void testNewLineBetweenNumbers() {
         assertEquals(6, stringCalculator.add("1\n2,3"));
         assertEquals(128, stringCalculator.add("90\n32\n6"));
-        // assertEquals(128, stringCalculator.add("90\n,32\n6"));           <-- This case is not handled here. 
     }
 
+    @Test
+    public void testMixedNewlineCommaEdgeCase() {
+        assertEquals(128, stringCalculator.add("90\n,32\n6"));
+        assertEquals(128, stringCalculator.add("90\n,32;\n6"));
+    }
+
+    @Test
+    public void testCustomDelimiterSemicolon() {
+        assertEquals(3, stringCalculator.add("//;\n1;2"));
+        assertEquals(128, stringCalculator.add("//,\n90,32,6"));         
+    }
 }
